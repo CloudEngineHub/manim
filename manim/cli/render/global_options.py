@@ -62,13 +62,6 @@ global_options = option_group(
         default=None,
     ),
     option(
-        "--custom_folders",
-        is_flag=True,
-        default=None,
-        help="Use the folders defined in the [custom_folders] section of the "
-        "config file to define the output folder structure.",
-    ),
-    option(
         "--disable_caching",
         is_flag=True,
         default=None,
@@ -119,12 +112,6 @@ global_options = option_group(
         "--enable_wireframe",
         is_flag=True,
         help="Enable wireframe debugging mode in opengl.",
-        default=None,
-    ),
-    option(
-        "--force_window",
-        is_flag=True,
-        help="Force window to open when using the opengl renderer, intended for debugging as it may impact performance",
         default=None,
     ),
     option(
